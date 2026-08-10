@@ -8,8 +8,13 @@ numrange=tk.Label(gui, text=' Select the number and the range',bg='white',font=(
 def result():
     store=''
     for i in range(radio.get()):
-result=tk.Button(gui, text='Result',bg='white',font=('Arial',8,'bold'))
-result.grid(row=5,column=3)
+         num.get()*i
+         print(num.get()*(i+1))
+         store=store+num.get()*(i+1)
+multiplication=tk.Label(gui )
+multiplication.grid(row =7,column=5)
+result1=tk.Button(gui, text='Result',bg='white',font=('Arial',8,'bold'),command=result)
+result1.grid(row=5,column=3)
 numrange.grid(row=1,column=3)
 num=tk.IntVar()
 comboxstorage=Combobox(gui,textvariable=num)
